@@ -1,0 +1,24 @@
+# Django and Django Restframework
+Django - python based web framework
+
+Website - Frontend(which can be seen by user),backend(which cannot be seen by user, it stores and control data)
+
+# Frontend development, frontend developer and Backend development, backend developer and Fullstack developer
+
+# Django framwork - it builds both, Fullstack framework
+
+# Django - MVT architecture(Model, Views, Templates)
+
+
+
+# Project Development
+Database Design
+Implement/ Development
+Testing
+Deploy
+
+# Database Design(ORM - Object Relational Mapper)
+# todolist
+	Title 		(char)
+	description	(char)
+	is_completed	(boolean)

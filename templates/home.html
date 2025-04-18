@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+   <h1>{{name}}</h1>
+   <h1>{{age}}</h1>
+   <table>
+      <thead>
+         <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>age</th>
+         </tr>
+      </thead>
+
+      <tbody border = "1">
+         
+         {% for person in persons %}
+         <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{person.name}}</td>
+            <td>
+               {% if person.age < 18 %}
+               Young
+               {% elif person.age < 50 %}
+               Adult
+               {% else %}
+               Old
+               {% endif %}
+               {{person.age}}
+            </td>
+         </tr>
+         {% endfor %}
+
+         </tr>
+      </tbody>
+   </table>
+
+{% endblock body %}
